@@ -13,6 +13,50 @@
     />
   </head>
   <body>
+    <!-- Pre header -->
+    <div class="hidden md:flex py-2 px-28 bg-silver justify-between">
+      <div class="flex items-center gap-5">
+        <div class="flex gap-2 items-center">
+          <p class="text-white text-sm">About the University</p>
+          <i class="fa-solid fa-caret-down text-gray-400"></i>
+        </div>
+        <div class="flex gap-1 items-center">
+          <p class="text-white text-sm">Faculties</p>
+          <i class="fa-solid fa-caret-down text-gray-400"></i>
+        </div>
+      </div>
+      <div class="flex items-center gap-10">
+        <ul class="flex gap-3 items-center">
+          <li>
+            <a href="#"><i class="fa-regular fa-newspaper text-white"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram text-white"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-youtube text-white"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-linkedin text-white"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-x-twitter text-white"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook-f text-white"></i></a>
+          </li>
+        </ul>
+        <div class="flex gap-3 items-center">
+          <p
+            class="text-gray-500 font-semibold hover:text-white cursor-pointer"
+          >
+            PT
+          </p>
+          <p class="text-white font-semibold cursor-pointer">EN</p>
+        </div>
+      </div>
+    </div>
+    <!-- header -->
     <div class="flex py-8 px-28 bg-gray-300 justify-between">
       <div>
         <img
@@ -41,5 +85,221 @@
         <i class="fa-solid fa-bars"></i>
       </div>
     </div>
+    <!-- Hero section -->
+    <div class="relative flex flex-col h-[600px] overflow-hidden">
+      <div class="absolute flex">
+        <img
+          src="https://www.up.pt/portal/media/images/programa-de-formacao-multidisplinar-uporto-s.format-jpeg.jpg"
+          alt="hero"
+          class="object-cover object-center bg-center bg-cover"
+        />
+        <img
+          src="https://www.up.pt/portal/media/images/slide-estudantes-internacionais-2025-2026.format-jpeg.jpg"
+          alt="hero"
+          class="object-cover object-center bg-center bg-cover"
+        />
+        <img
+          src="https://www.up.pt/portal/media/images/investigacao-icbas-2024_01.format-jpeg.jpg"
+          alt="hero"
+          class="object-cover object-center bg-center bg-cover"
+        />
+        <img
+          src="https://www.up.pt/portal/media/images/plano-estrategico-uporto-2030-slide_03.format-jpeg.jpg"
+          alt="hero"
+          class="object-cover object-center bg-center bg-cover"
+        />
+      </div>
+      <div class="flex justify-between">
+        <div class="absolute left-0 px-5 py-2 bg-gold top-[50%]">
+          <i class="fa-solid fa-chevron-left text-white"></i>
+        </div>
+        <div class="absolute right-0 px-5 py-2 bg-gold top-[50%]">
+          <i class="fa-solid fa-chevron-right text-white"></i>
+        </div>
+      </div>
+      <div
+        class="absolute flex flex-col gap-5 p-5 bg-neutral-600 z-10 w-[500px] left-[10%] top-[50%]"
+      >
+        <h2 class="font-semibold text-white text-2xl">Let's grow together?</h2>
+        <p class="text-white text-sm">
+          The new and ambitious U.Porto Programme for Multidisciplinary
+          Education and Training is offering hundreds of training opportunities
+          for young people and adults.
+        </p>
+        <a href="#" class="px-2 bg-gold w-[90px]">See More</a>
+      </div>
+    </div>
+    <!-- Study -->
+    <div class="flex flex-col px-28 py-20 gap-20">
+      <div class="relative flex justify-between w-[100%]">
+        <div class="flex flex-col gap-10">
+          <h1 class="text-gold text-7xl font-thin">Study</h1>
+          <p class="font-semibold text-3xl">Your future is here!</p>
+        </div>
+        <p class="font-thin text-xl w-[800px] mt-28">
+          Gathering the most complete offer of training programmes in Portugal,
+          the 14 faculties of the U.Porto offer unique conditions to those who
+          want to build an academic path of excellence and properly valued by
+          the labour market.
+        </p>
+      </div>
+      <div class="h-[1px] px-28 bg-gray-300 flex"></div>
+    </div>
+
+    <!-- Course -->
+    <div class="py-5 px-28 flex flex-col mb-20">
+      <h1 class="font-semibold text-3xl">Which course are you looking for?</h1>
+      <div class="flex gap-10 items-center">
+        <form action="submit" class="mt-8 flex flex-col gap-3">
+          <select name="All" id="#" class="p-3 border-2 border-black w-[800px]">
+            <option value="All" class="text-xl">All</option>
+            <option value="Bachelor's" class="text-xl">
+              Bachelor's and Integrated Master’s Degrees
+            </option>
+            <option value="Master's" class="text-xl">Master's</option>
+            <option value="Doctorate" class="text-xl">Doctorate</option>
+          </select>
+          <input
+            type="text"
+            placeholder="Please enter course keywords.."
+            class="py-3 px-5 border-2 border-black w-[800px] placeholder:text-gray-400 placeholder:text-xl"
+          />
+          <button
+            class="p-3 bg-gold w-[800px] text-white font-semibold text-3xl hover:bg-white hover:text-gold hover:border-2 hover:border-gold"
+          >
+            Search
+          </button>
+        </form>
+        <div class="flex flex-col gap-2 w-[400px]">
+          <h1 class="font-medium text-2xl">Courses from A to Z:</h1>
+          <a href="#" class="text-2xl text-silver underline font-extralight"
+            >Bachelor's and Integrated Master’s Degrees</a
+          >
+          <a href="#" class="text-2xl text-silver underline font-extralight"
+            >Master’s Degree</a
+          >
+          <a href="#" class="text-2xl text-silver underline font-extralight"
+            >Doctorate</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- News -->
+    <div class="bg-slate-100 flex flex-col px-28 py-10 gap-10">
+      <div class="flex w-[100%] mt-20 justify-between items-center">
+        <h1 class="text-gold text-7xl font-thin">News</h1>
+        <div class="flex items-center gap-2">
+          <p class="text-gold font-semibold">All news</p>
+          <i class="fa-solid fa-circle-chevron-right text-gold"></i>
+        </div>
+      </div>
+
+      <div class="flex gap-10 mt-10">
+        <div
+          class="flex flex-col bg-white w-[420px] justify-between min-h-[550px]"
+        >
+          <div class="flex flex-col gap-5 p-5">
+            <p class="text-gold">Campus e Comunidade</p>
+            <h2 class="text-2xl font-semibold">
+              José Manuel Varejão é o novo Pró-Reitor para a Comunicação e
+              Alumni
+            </h2>
+          </div>
+          <div class="flex flex-col gap-3">
+            <p class="px-5">10 January 2025</p>
+            <img
+              src="https://noticias.up.pt/wp-content/uploads/2025/01/jose-varejao-pro-reitor-uporto.jpg"
+              alt="news"
+            />
+          </div>
+        </div>
+        <div
+          class="flex flex-col bg-white w-[420px] justify-between min-h-[550px]"
+        >
+          <div class="flex flex-col gap-5 p-5">
+            <p class="text-gold">Campus e Comunidade</p>
+            <h2 class="text-2xl font-semibold">
+              FEUP celebra 188 anos com muitas novidades e de portas abertas
+            </h2>
+          </div>
+          <div class="flex flex-col gap-3">
+            <p class="px-5">09 January 2025</p>
+            <img
+              src="https://noticias.up.pt/wp-content/uploads/2025/01/Dia-da-FEUP.jpg"
+              alt="news"
+            />
+          </div>
+        </div>
+        <div
+          class="flex flex-col bg-white w-[420px] justify-between min-h-[550px]"
+        >
+          <div class="flex flex-col gap-5 p-5">
+            <p class="text-gold">No Mundo</p>
+            <h2 class="text-2xl font-semibold">
+              FADEUP reforça estatuto de melhor escola de desporto portuguesa
+            </h2>
+          </div>
+          <div class="flex flex-col gap-3">
+            <p class="px-5">06 January 2025</p>
+            <img
+              src="https://noticias.up.pt/wp-content/uploads/2025/01/Noticia-UP-18.jpg"
+              alt="news"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center gap-2 mb-16">
+        <div class="px-4 py-2 bg-gray-400">
+          <i class="fa-solid fa-chevron-left text-white"></i>
+        </div>
+        <div class="px-4 py-2 bg-gold">
+          <i class="fa-solid fa-chevron-right text-white"></i>
+        </div>
+      </div>
+    </div>
+    <!-- Excellence -->
+    <div class="flex flex-col px-28 py-10 mb-10">
+      <div class="relative flex h-[400px] mt-10">
+        <h1 class="absolute text-6xl font-thin text-gold w-[500px]">
+          We are a University of Excellence!
+        </h1>
+        <div class="relative flex gap-10 left-[25%]">
+          <img
+            src="https://www.up.pt/portal/static/images/minerva_01.png"
+            alt="img"
+            class="h-[100%]"
+          />
+          <div class="flex flex-col gap-10 w-[600px] py-3">
+            <p class="font-extralight text-lg">
+              With over 100 years of history, the University of Porto is a
+              <span class="font-medium"
+                >leading teaching and scientific research institution in
+                Portugal and worldwide</span
+              >.
+            </p>
+            <p class="font-extralight text-lg">
+              Considered
+              <span class="font-medium"
+                >the best Portuguese University and one of the best 100 European
+                institutions</span
+              >
+              according to the most important Higher Education rankings, U.Porto
+              combines quality teaching and excellent research with the best
+              academic experience.
+            </p>
+            <p class="font-medium text-lg">We are waiting for you!</p>
+            <div class="flex items-center gap-2 cursor-pointer">
+              <p class="text-gold font-semibold">See More</p>
+              <i class="fa-solid fa-circle-chevron-right text-gold"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="p-[3px] bg-gray-100"></div>
+
+    <!-- Research -->
+    <div class="px-28 py-10"></div>
   </body>
 </html>
