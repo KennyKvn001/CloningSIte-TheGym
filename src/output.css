@@ -570,6 +570,10 @@ video {
   bottom: -12px;
 }
 
+.bottom-\[20\%\] {
+  bottom: 20%;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -602,8 +606,8 @@ video {
   z-index: 10;
 }
 
-.z-20 {
-  z-index: 20;
+.z-50 {
+  z-index: 50;
 }
 
 .mb-10 {
@@ -642,11 +646,6 @@ video {
   display: none;
 }
 
-.size-10 {
-  width: 2.5rem;
-  height: 2.5rem;
-}
-
 .h-\[100\%\] {
   height: 100%;
 }
@@ -659,12 +658,12 @@ video {
   height: 400px;
 }
 
-.h-\[600px\] {
-  height: 600px;
+.h-\[60dvh\] {
+  height: 60dvh;
 }
 
-.h-10 {
-  height: 2.5rem;
+.h-full {
+  height: 100%;
 }
 
 .min-h-\[550px\] {
@@ -683,10 +682,6 @@ video {
   width: 400px;
 }
 
-.w-\[420px\] {
-  width: 420px;
-}
-
 .w-\[500px\] {
   width: 500px;
 }
@@ -695,8 +690,12 @@ video {
   width: 600px;
 }
 
-.w-\[800px\] {
-  width: 800px;
+.w-\[65\%\] {
+  width: 65%;
+}
+
+.w-\[80\%\] {
+  width: 80%;
 }
 
 .w-\[90px\] {
@@ -712,24 +711,20 @@ video {
   width: 100%;
 }
 
-.w-auto {
-  width: auto;
-}
-
-.w-\[83\%\] {
-  width: 83%;
-}
-
-.w-\[75\%\] {
-  width: 75%;
-}
-
-.w-20 {
-  width: 5rem;
-}
-
 .max-w-\[50\%\] {
   max-width: 50%;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+.flex-auto {
+  flex: 1 1 auto;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
 }
 
 .grow {
@@ -738,10 +733,6 @@ video {
 
 .cursor-pointer {
   cursor: pointer;
-}
-
-.grid-flow-row {
-  grid-auto-flow: row;
 }
 
 .grid-flow-col {
@@ -754,10 +745,6 @@ video {
 
 .flex-col {
   flex-direction: column;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
 }
 
 .items-start {
@@ -776,16 +763,16 @@ video {
   justify-content: space-around;
 }
 
-.justify-stretch {
-  justify-content: stretch;
-}
-
 .gap-1 {
   gap: 0.25rem;
 }
 
 .gap-10 {
   gap: 2.5rem;
+}
+
+.gap-14 {
+  gap: 3.5rem;
 }
 
 .gap-2 {
@@ -800,6 +787,14 @@ video {
   gap: 0.75rem;
 }
 
+.gap-36 {
+  gap: 9rem;
+}
+
+.gap-40 {
+  gap: 10rem;
+}
+
 .gap-5 {
   gap: 1.25rem;
 }
@@ -812,64 +807,12 @@ video {
   gap: 2rem;
 }
 
-.gap-28 {
-  gap: 7rem;
-}
-
-.gap-32 {
-  gap: 8rem;
-}
-
-.gap-36 {
-  gap: 9rem;
-}
-
-.gap-\[200px\] {
-  gap: 200px;
-}
-
-.gap-\[140px\] {
-  gap: 140px;
-}
-
-.gap-\[120px\] {
-  gap: 120px;
-}
-
-.gap-\[110px\] {
-  gap: 110px;
-}
-
-.gap-\[100px\] {
-  gap: 100px;
-}
-
-.gap-\[80px\] {
-  gap: 80px;
-}
-
-.gap-\[60px\] {
-  gap: 60px;
-}
-
-.gap-14 {
-  gap: 3.5rem;
-}
-
-.gap-0 {
-  gap: 0px;
-}
-
-.gap-40 {
-  gap: 10rem;
-}
-
-.gap-y-36 {
-  row-gap: 9rem;
-}
-
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll;
 }
 
 .border-2 {
@@ -956,6 +899,10 @@ video {
   padding: 1.25rem;
 }
 
+.p-\[\.1px\] {
+  padding: .1px;
+}
+
 .p-\[0\.1px\] {
   padding: 0.1px;
 }
@@ -970,10 +917,6 @@ video {
 
 .p-\[3px\] {
   padding: 3px;
-}
-
-.p-\[\.1px\] {
-  padding: .1px;
 }
 
 .px-2 {
@@ -999,6 +942,11 @@ video {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 
 .py-16 {
@@ -1029,11 +977,6 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.py-14 {
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
 }
 
 .text-2xl {
@@ -1214,12 +1157,88 @@ video {
   opacity: 1;
 }
 
-@media (min-width: 768px) {
-  .md\:flex {
+@media (max-width: 900px) {
+  .max-\[900px\]\:relative {
+    position: relative;
+  }
+
+  .max-\[900px\]\:bottom-0 {
+    bottom: 0px;
+  }
+
+  .max-\[900px\]\:left-0 {
+    left: 0px;
+  }
+
+  .max-\[900px\]\:right-5 {
+    right: 1.25rem;
+  }
+
+  .max-\[900px\]\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .max-\[900px\]\:flex {
     display: flex;
   }
 
-  .md\:hidden {
+  .max-\[900px\]\:hidden {
     display: none;
+  }
+
+  .max-\[900px\]\:h-auto {
+    height: auto;
+  }
+
+  .max-\[900px\]\:w-\[300px\] {
+    width: 300px;
+  }
+
+  .max-\[900px\]\:w-full {
+    width: 100%;
+  }
+
+  .max-\[900px\]\:max-w-full {
+    max-width: 100%;
+  }
+
+  .max-\[900px\]\:grid-flow-row {
+    grid-auto-flow: row;
+  }
+
+  .max-\[900px\]\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .max-\[900px\]\:flex-col {
+    flex-direction: column;
+  }
+
+  .max-\[900px\]\:gap-10 {
+    gap: 2.5rem;
+  }
+
+  .max-\[900px\]\:gap-5 {
+    gap: 1.25rem;
+  }
+
+  .max-\[900px\]\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .max-\[900px\]\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .max-\[900px\]\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .max-\[900px\]\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
